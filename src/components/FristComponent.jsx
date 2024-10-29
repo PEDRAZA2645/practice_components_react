@@ -14,7 +14,7 @@ const FristComponent = () => {
   return (
     <>
         <div>My First Comonent</div>
-        <div className="container bg-danger-subtle mt-2">
+        <div className="container mt-4">
         <h1>Temas de React</h1>
         <ul>
             <li>Componentes</li>
@@ -24,13 +24,13 @@ const FristComponent = () => {
         </ul>
         </div>
 
-        <div className="container bg-info py-2 px-4">
+        <div className="container py-2">
         <h1>Datos del Docente</h1>
         <p>Nombre: <strong>{ name }</strong></p>
         <p>Github: <strong>{ github_profile }</strong></p>
         </div>
 
-        <div className="container bg-info-subtle py-2 px-4">
+        <div className="container py-2">
         <h1>Datos del Estudiante</h1>
         <p>Nombre: <strong>{ student.name }</strong></p>
         <p>Apellido: <strong>{ student.lastName }</strong></p>

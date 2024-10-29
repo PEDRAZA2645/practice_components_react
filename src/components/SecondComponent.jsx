@@ -14,9 +14,11 @@ const SecondComponent = () => {
         "Otro libro"
     ];
 
+    //Operador Ternario condicion ? ( si_verdadero ) : (si_falso)
+
   return (
    <>
-     <div className="container mt-2 pt-2 bg-warning-subtle">
+     <div className="container mt-2 pt-2">
         <h1>Second Component</h1>
         {/* no es la forma correcta de hacerlo
             <ul>
@@ -30,11 +32,15 @@ const SecondComponent = () => {
         </ul> */}
 
         <ul>
-            {
+            { books.length >= 1 ? 
+            (
                 books.map((book, index) =>{
                     return <li key={index}>{ book }</li>       
                 })
-            }
+            ) : 
+            (
+                <p>No existen Libros</p>
+            ) }
         </ul>
       </div>
    </>
